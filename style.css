@@ -83,7 +83,7 @@ h2{
     background: #FFE4E1;       /* #dacbe8;*/
     margin: 0;
     align-items: center;
-    padding: 50px;
+    padding:15px 0px 30px 0px;
     position:inline;
   }
   .container-footer a{
@@ -103,7 +103,7 @@ h2{
     background-size: cover;
     position: relative;
   }
-  .container-historia,.container-noticias{
+  .container-historia,.container-noticias,.container-tour,.container-canciones{
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(46,13,165,1) 80%, rgba(46,13,165,1) 100%);
     height: 800px;
@@ -141,38 +141,51 @@ h2{
   color:#dacbe8;
  }
 
+ /*historia*/
+
  /*noticias*/
- .boton
+ .container-noticias,.container-tour h2{
+  position: relative;
+  padding:10px;
+  text-align: center;
+ }
+
+ /*noticias*/
+
+ /*tour*/
+ .boton-fechas
  {
     background-color: #e079ba;
     color: beige;
     padding: 15px 25px;
     text-decoration: none;
-    border-radius: 500px;
+    border-radius: 160px;
     border: #C71585 solid;
+    position: relative;
  }
- .boton:hover
+ .boton-fechas:hover
  {
    background-color: #C71585;
-   border-radius: 500px;
+   border-radius: 160px;
    border: #e079ba solid 5px;
 
  }
- .h1class
+ .h2class
  {
   color: hsl(.75turn, 90%, 65%);
   text-align: center;
   border: #C71585 solid 5px;
+  font-size: 56px;
  }
  h3{
   text-align: center;
   color:#FAFAD2;
+  font-size: 40px;
+  
  }
  ul{
   color: #FFB6C1;
+  font-size:18px;
  }
  
- .container-noticias h2{
-  padding:50px;
-  text-align: center;
- }
+ 
