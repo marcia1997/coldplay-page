@@ -103,7 +103,7 @@ h2{
     background-size: cover;
     position: relative;
   }
-  .container-historia,.container-noticias,.container-tour,.container-canciones{
+  .container-historia,.container-noticias,.container-tour,.container-canciones,.container-novedades{
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(46,13,165,1) 80%, rgba(46,13,165,1) 100%);
     height: 800px;
