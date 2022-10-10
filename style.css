@@ -80,7 +80,7 @@ h2{
     position: absolute;
     height: 70px;
     width: 100%;
-    background: #FFE4E1;       /* #dacbe8;*/
+    background: #FFE4E1;   /*#ecbce1; */      /* #dacbe8;*/
     margin: 0;
     align-items: center;
     padding:15px 0px 30px 0px;
@@ -96,7 +96,7 @@ h2{
   .container-imagen-home { 
     background-image: url("https://i.ytimg.com/vi/vitp2fLRHT0/maxresdefault.jpg");
     background-color:black;
-    height: 800px;
+    height: 1000px;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -106,7 +106,7 @@ h2{
   .container-historia,.container-noticias,.container-tour,.container-canciones,.container-novedades{
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(46,13,165,1) 80%, rgba(46,13,165,1) 100%);
-    height: 800px;
+    height: 1000px;
     width: 100%;
     position: relative;
   
@@ -149,26 +149,7 @@ h2{
  /*historia*/
 
  /*noticias*/
-.galeria-noticias {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
-}
 
-.galeria-noticias:hover {
-  border: 1px solid #777;
-}
-
-.galeria-noticias img {
-  width: 100%;
-  height: auto;
-}
-
-desc {
-  padding: 15px;
-  text-align: center;
-}
  
 
 
@@ -239,9 +220,12 @@ div.desc {
         }
 
   h1{
-    font-size:45px;
+    font-size:50px;
   }
-  
+
+  h2{
+    font-size:35px;
+  }
   .menu{display:block;
         }
   
@@ -251,4 +235,18 @@ div.desc {
   .container-imagen-home{
     width:100%;
   }
+.sec-historia-imagen{
+  margin-top:0;
+}
+.img-historia{
+  padding:14px;
+}
+  .historia{
+    display:block;
+    height:800px;
+    
+   }
+   .footer{
+    position:relative;
+   }
 }
