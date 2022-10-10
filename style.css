@@ -4,6 +4,7 @@ body{
     margin:0;
     padding:0;
 }
+
 header{
     background-color:  #FFE4E1;   /* #f4f4f4;*/
     width: 100%;
@@ -21,7 +22,7 @@ h1{
     animation: rainbow-colors 8s linear infinite;
     animation-delay: calc(-4s * var(--char-percent));
     color: hsl(
-      calc(360deg * var(--char-percent)
+      calc(240deg * var(--char-percent)
       ), 
       90%, 
       100%
@@ -148,32 +149,7 @@ h2{
 
  /*historia*/
 
- /*noticias*/
-
  
-
-
- /*noticias*/
- div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
 
  /*tour*/
  .boton-fechas
@@ -212,6 +188,42 @@ div.desc {
  }
  
  
+ /* galeria de noticias  */
+ .main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.container-noticias{
+  height: 100%;
+}
+
+.galeria-noticias,
+.galeria-noticias > .columna-noticias {
+  padding: 10px;
+  margin-right: 20px;
+
+}
+
+.columna-noticias {
+  float: left;
+  width: 30%;
+}
+
+.galeria-noticias:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  padding: 5px;
+  border: 1px solid fuchsia;
+}
+
+
+
 /*Responsive*/
 
  @media only screen and (max-width: 600px) {
@@ -225,6 +237,10 @@ div.desc {
 
   h2{
     font-size:35px;
+  }
+
+  p{
+    font-size:12px;
   }
   .menu{display:block;
         }
@@ -245,8 +261,25 @@ div.desc {
     display:block;
     height:800px;
     
+    
    }
-   .footer{
-    position:relative;
-   }
+ 
+}
+
+
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .columna-noticias {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columna-noticias {
+    width: 100%;
+  }
 }
