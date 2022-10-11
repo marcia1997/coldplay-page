@@ -259,11 +259,12 @@ h2{
 }
   .historia{
     display:block;
-    height:800px;
-    
-    
+    height:800px; 
    }
  
+   iframe {
+    width:100%;
+   }
 }
 
 
