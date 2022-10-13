@@ -36,7 +36,7 @@ header{
 
 }
 
-h2{
+h1{
   font-size:56px;
   color: #dacbe8;
   font-weight:bold;
@@ -163,7 +163,6 @@ h2{
     border-radius: 160px;
     border: #C71585 solid 2px;
     position: relative;
-    margin-left: 1200px;
  }
  .boton-fechas:hover
  {
@@ -177,7 +176,7 @@ h2{
   color: hsl(.75turn, 90%, 65%);
   text-align: center;
   border: #C71585 solid 5px;
-  font-size: 56px;
+  font-size: 35px;
   margin-left: 5px;
  }
  h3{
@@ -190,7 +189,7 @@ h2{
  ul{
   color: #FFB6C1;
   font-size:18px;
-  padding-left:20px;
+  padding-top: 10px;
  }
  
  
