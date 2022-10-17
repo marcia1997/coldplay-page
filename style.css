@@ -8,11 +8,11 @@ body{
 header{
     background-color:  #FFE4E1;   /* #f4f4f4;*/
     width: 100%;
-    height: 200px;
+    height: 170px;
     padding: 10px;;
     margin:0;
     text-align:center;
-    font-size: 90px;
+    font-size: 100px;
     animation: rainbow-colors 8s linear infinite;
     animation-delay: calc(-4s * var(--char-percent));
     color: hsl(
@@ -45,16 +45,12 @@ h1{
   padding-top: 20px;
 }
 
-<<<<<<< Updated upstream
-/*menu */
-=======
-
-
->>>>>>> Stashed changes
+/*menu*/
 .menu {
     display: flex;
     position: relative;
     width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     background-color: #dacbe8;
@@ -99,9 +95,9 @@ h1{
   /*footer*/
   /*background*/
   .container-imagen-home { 
-    background-image: url("https://i.ytimg.com/vi/vitp2fLRHT0/maxresdefault.jpg");
+    background-image: url("https://media.globalcitizen.org/5a/7b/5a7b7b6e-0796-4005-a7dd-c7a7c7fb1ded/coldplay_hero.jpg");
     background-color:black;
-    height: 1000px;
+    height: 800px;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -141,8 +137,8 @@ h1{
     margin: 100px 50px 25px 100px;
   }
   .img-historia{
-    width: 50%;
-    height: 70%;
+    width: 70%;
+    height: 100%;
   }
  
   .sec-historia-texto{
@@ -259,7 +255,7 @@ h1{
 
  @media only screen and (max-width: 600px) {
   header{  height:80px;
-           font-size: 50px;
+           font-size: 45px;
 
         }
 
@@ -304,17 +300,26 @@ h1{
    }
 }
 
-
-
-
+.video-yt iframe {
+  border: 1px solid #3e3e3e;
+  position: relative;
+  width: 100%;
+  height:40%; 
+}
+.video-yt{
+  padding-top:520px;
+}
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
  
-  }
-  header{ 
-    width:100%;
-    height:120px;
+  header{
+  width: 100%;
+    height: 120px;
+    padding: 10px;;
+    margin:0;
+    text-align:center;
+    font-size: 70px;
   }
   
 
