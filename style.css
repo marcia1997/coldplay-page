@@ -218,12 +218,24 @@ h1{
   font-size: 35px;
   margin-left: 5px;
  }
- h3{
+ .ptour{
   text-align: center;
-  color:#FAFAD2;
-  font-size: 35px;
+  color:#FFA2F3;
+  font-size: 20px;
+ }
+ .padre{
+  display: flex;
+ }
+ 
+ 
+ .hijo
+ {  
+    color:#FFA2F3;
+    border: #C71585 solid 5px; 
+    padding: 20px;
+    height: 60px;
 
-  
+
  }
  ul{
   color: #FFB6C1;
