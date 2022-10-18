@@ -84,7 +84,7 @@ h1{
     background: #FFE4E1;   /*#ecbce1; */      /* #dacbe8;*/
     margin: 0;
     align-items: center;
-    padding:15px 0px 0px 0px;
+    padding:25px 10px 50px 90px;
     position:inline;
   }
   .container-footer a{
@@ -93,7 +93,8 @@ h1{
     
   }
   /*footer*/
-  /*background*/
+
+  /*backgrounds*/
   .container-imagen-home { 
     background-image: url("https://media.globalcitizen.org/5a/7b/5a7b7b6e-0796-4005-a7dd-c7a7c7fb1ded/coldplay_hero.jpg");
     background-color:black;
@@ -113,7 +114,7 @@ h1{
   
   }
   /*general---fuentes*/
-  .container-noticias,.container-tour,.container-novedades,.container-canciones h2{
+  .container-noticias,.container-tour,.container-novedades,.container-canciones h1{
     position: relative;
     padding:0;
     text-align: center;
@@ -137,7 +138,7 @@ h1{
     margin: 100px 50px 25px 100px;
   }
   .img-historia{
-    width: 70%;
+    width: 10%;
     height: 100%;
   }
  
@@ -152,7 +153,37 @@ h1{
 
  /*historia*/
 
+
+
+ /*canciones*/
  
+ .container-canciones p{
+  color:#FFE4E1;
+  padding: 10px;;
+ }
+ .video-yt iframe{
+  position: absolute ;
+  margin:-450px 0px 0px 590px;
+  width: 500px;
+  height: 400px;
+  
+}
+.video-yt{
+padding:30px;
+}
+
+.spotify-player{
+  padding:8px;
+}
+
+.canciones-video{
+  position:relative; 
+  width:20%;
+  height:20%;
+  margin:-750px 50px 450px 980px;
+}
+
+/*canciones*/
 
  /*tour*/
  .boton-fechas
@@ -193,7 +224,11 @@ h1{
   padding-top: 10px;
  }
  
- 
+
+
+
+ /*noticias*/
+
  /* galeria de noticias  */
 
 
@@ -214,19 +249,16 @@ h1{
   margin: auto;
 }
 
-
-
 .row {
  padding-left: 25px;
 }
 
-/* Add padding BETWEEN each column (if you want) */
 .row,
 .row > .column {
   padding: 6px;
 }
 
-/* Create four equal columns that floats next to each other */
+
 .column {
   float: left;
   width: 25%;
@@ -237,19 +269,19 @@ h1{
  cursor: pointer;
 }
 
-/* Clear floats after rows */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Content */
+
 .content {
-  padding:5 px;
+ padding: 5px;
+
 }
 
-
+ /* galeria de noticias  */
 
 /*Responsive*/
 
@@ -271,11 +303,16 @@ h1{
     font-size:12px;
   }
   .menu{display:block;
-     height:120px;
+     height:150px;
+     padding-top:-5px;
         }
   
  .menu a{
-    padding: 0px;
+    padding: 3px;
+  }
+  .menu a:hover{
+    background-color:#C71585;
+    color:#FFE4E1;   
   }
   .container-imagen-home{
     width:100%;
@@ -284,10 +321,8 @@ h1{
   margin-top:0;
 }
 .img-historia{
-  width:100%;
-  height:100%;
- padding: 30px 50px 20px 30px;
-  
+  width:50%;
+  height:70%;
 
 }
   .historia{
@@ -297,18 +332,25 @@ h1{
  
    iframe {
     width:100%;
+    height:50%;
    }
+   
+   
+   .column {
+    width: 100%;
+  }
+  .video-yt iframe{
+    position:relative ;
+    margin:0;
+    width:100%;
+    height:100%;
+
+    
+  }
+  
 }
 
-.video-yt iframe {
-  border: 1px solid #3e3e3e;
-  position: relative;
-  width: 100%;
-  height:40%; 
-}
-.video-yt{
-  padding-top:520px;
-}
+
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
@@ -321,21 +363,11 @@ h1{
     text-align:center;
     font-size: 70px;
   }
-  
-
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
   .column {
     width: 50%;
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
+  
+ 
 
