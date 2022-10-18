@@ -152,7 +152,44 @@ h1{
 
  /*historia*/
 
- 
+ /*novedades*/
+ .formulario
+ {
+  width: 600px;
+  margin: auto;
+  background-color: rgba(0,0,0,0.4);
+  padding: 30px;
+  box-sizing: border-box;
+  margin-top: 20px;
+ }
+ .h2nov
+ {
+  margin: 0px;
+  text-align: center;
+  color: #e079ba;
+  font-size: 30px;
+ }
+
+ input{
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: #9932CC  solid 5px;
+  background-color: #FFB6C1;
+
+ }
+ #button
+ {
+  background-color: #4B0082;
+  color: #FFE4E1;
+  padding: 20px;  
+ }
+ #button:hover
+ {
+  background-color: #BA55D3;
+ }
 
  /*tour*/
  .boton-fechas
@@ -338,19 +375,10 @@ h1{
   }
 }
 
-
-/*Novedades*/
-label 
-{
-    color:#dacbe8;
-    font-size: 20px;
- 
+@media screen and (max-width: 300px) {
+  .formulario {
+     width: 100%;
+  }
 }
 
-input
-{
-  width : 150px;
-  padding: 10px;
-  margin: 20px;
-  border: #e079ba solid 3px;
-}
+

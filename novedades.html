@@ -9,51 +9,42 @@
     <title>COLDPLAY</title>
 </head>
 <body>
-    <header>
-        <a name="arriba"></a> 
-        COLDPLAY
-    </header>
-    <nav class="menu">
-        <a href="index.html#arriba">HOME</a>
-        <a href="noticias.html#arriba">NOTICIAS</a> 
-        <a href="novedades.html#arriba">NOVEDADES</a> 
-        <a href="tour.html#arriba">TOUR</a> 
-        <a href="canciones.html#arriba">CANCIONES</a>
-        <a href="historia.html#arriba">HISTORIA</a>
-     </nav>
-
-     <div class="container-novedades">
-        <h1>NOVEDADES</h1>
-        <p>Si te interesa tener las ultimas novedades suscribite a nuestra pagina.</p>
-
-    <form action="">
-        <legend>
-            <label for="nombre" > Nombre:  </label>
-            <input type="text">
-            <br><br>
-            <label for="correo">E-mail:  </label>
-            <input type="email">
-            <br><br>
-            <label for="nombre">Pais:  </label>
-            <input type="text">        
-            <input type="submit" value="Enviar">
-        </legend>        
-    </form>
-     </div>
-
-
-
-     <!--footer-->
-    <footer>
-        <div class="container-footer">
+    <main class="bodynov">
+        <header>  COLDPLAY </header>
+        <nav class="menu">
+            <a name="arriba"></a> 
+            <a href="index.html#arriba">HOME</a>
+            <a href="noticias.html#arriba">NOTICIAS</a> 
+            <a href="novedades.html#arriba">NOVEDADES</a> 
+            <a href="tour.html#arriba">TOUR</a> 
+            <a href="canciones.html#arriba">CANCIONES</a>
+            <a href="historia.html#arriba">HISTORIA</a>
+         </nav>
+         <div class="container-novedades">
+            <h1>NOVEDADES</h1>
+            <h3 class="h2nov">Si te interesa tener las ultimas novedades suscribite a nuestra pagina.</h3>
+        <!--formulario-->
+         <form class="formulario" action="">
+            <input type="text" name="nombre" placeholder="NOMBRE">
+            <input type="text" name="email" placeholder="E-MAIL">
+            <input type="text" name="pais" placeholder="PAIS">
+            <input type="button" value="ENVIAR" id="button">
+        </form>
+         </div>    
+         <!--footer-->
+        <footer>
+            <div class="container-footer">
+        
+                <a href="https://www.instagram.com/coldplay/" target="_blank"  > <img src="imagenes/iconos/instagram.png" alt="instagram" width="20"> </a>  <!-- el target es para que se abra en otra pestaña-->
+                <a href="https://www.facebook.com/coldplay"  target="_blank" > <img src="imagenes/iconos/facebook.png" alt="facebook" width="20"> </a> 
+                <a href="https://twitter.com/coldplay/" target="_blank" > <img src="imagenes/iconos/gorjeo.png" alt="twitter"width="20" > </a> 
+                <a href="https://www.youtube.com/user/ColdplayVEVO" target="_blank" > <img src="imagenes/iconos/youtube.png" alt="youtube" width="20"> </a> 
+                <a href="https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU" target="_blank" > <img src="imagenes/iconos/social.png" alt="spotify" width="20"></a>
+                <p>copyright &copy</p>  
+            </div>
+        </footer>   
+    </main>
     
-            <a href="https://www.instagram.com/coldplay/" target="_blank"  > <img src="imagenes/iconos/instagram.png" alt="instagram" width="20"> </a>  <!-- el target es para que se abra en otra pestaña-->
-            <a href="https://www.facebook.com/coldplay"  target="_blank" > <img src="imagenes/iconos/facebook.png" alt="facebook" width="20"> </a> 
-            <a href="https://twitter.com/coldplay/" target="_blank" > <img src="imagenes/iconos/gorjeo.png" alt="twitter"width="20" > </a> 
-            <a href="https://www.youtube.com/user/ColdplayVEVO" target="_blank" > <img src="imagenes/iconos/youtube.png" alt="youtube" width="20"> </a> 
-            <a href="https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU" target="_blank" > <img src="imagenes/iconos/social.png" alt="spotify" width="20"></a>
-            <p>copyright &copy</p>  
-        </div>
-    </footer>   
+
 </body>
 </html>
