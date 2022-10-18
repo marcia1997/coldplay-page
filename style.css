@@ -153,7 +153,6 @@ h1{
 
  /*historia*/
 
-<<<<<<< HEAD
  /*novedades*/
  .formulario
  {
@@ -192,39 +191,6 @@ h1{
  {
   background-color: #BA55D3;
  }
-=======
-
-
- /*canciones*/
- 
- .container-canciones p{
-  color:#FFE4E1;
-  padding: 10px;;
- }
- .video-yt iframe{
-  position: absolute ;
-  margin:-450px 0px 0px 590px;
-  width: 500px;
-  height: 400px;
-  
-}
-.video-yt{
-padding:30px;
-}
-
-.spotify-player{
-  padding:8px;
-}
-
-.canciones-video{
-  position:relative; 
-  width:20%;
-  height:20%;
-  margin:-750px 50px 450px 980px;
-}
-
-/*canciones*/
->>>>>>> 0aa900c0bdcab6f8c224272bf65646824f24a675
 
  /*tour*/
  .boton-fechas
