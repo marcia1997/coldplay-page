@@ -155,7 +155,34 @@ h1{
 
  /*historia*/
 
+ /*novedades*/
+ .formulario
+ {
+  width: 600px;
+  margin: auto;
+  background-color: rgba(0,0,0,0.4);
+  padding: 30px;
+  box-sizing: border-box;
+  margin-top: 20px;
+ }
+ .h2nov
+ {
+  margin: 0px;
+  text-align: center;
+  color: #e079ba;
+  font-size: 30px;
+ }
 
+ input{
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: #9932CC  solid 5px;
+  background-color: #FFB6C1;
+
+  
 
  /*canciones*/
  .container-canciones{
@@ -188,8 +215,6 @@ padding:30px;
   margin:-750px 50px 450px 980px;
 }/*
 
-/*canciones*/
-
  /*tour*/
  .boton-fechas
  {
@@ -216,12 +241,24 @@ padding:30px;
   font-size: 35px;
   margin-left: 5px;
  }
- h3{
+ .ptour{
   text-align: center;
-  color:#FAFAD2;
-  font-size: 35px;
+  color:#FFA2F3;
+  font-size: 20px;
+ }
+ .padre{
+  display: flex;
+ }
+ 
+ 
+ .hijo
+ {  
+    color:#FFA2F3;
+    border: #C71585 solid 5px; 
+    padding: 20px;
+    height: 60px;
 
-  
+
  }
  ul{
   color: #FFB6C1;
@@ -374,21 +411,20 @@ padding:30px;
   }
 }
 
+<<<<<<< HEAD
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .formulario {
+     width: 100%;
+  }
+
   
  
 
-/*Novedades*/
-label 
-{
-    color:#dacbe8;
-    font-size: 20px;
- 
-}
 
-input
-{
-  width : 150px;
-  padding: 10px;
-  margin: 20px;
-  border: #e079ba solid 3px;
-}
