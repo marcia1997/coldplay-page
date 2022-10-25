@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <link rel="icon" href="imagenes/iconos/mariposa.ico"> 
     <title>COLDPLAY</title>
 </head>
 <body>
-    <main class="bodynov">
-        <header>  COLDPLAY </header>
-        <nav class="menu2">
+	<div class="contenedornov">
+		<header class="headernov">
+			<h2>HEADER</h2>
+		</header>
+        <nav class="menu">
             <button id="boton-menu-nav" onclick="accion()"> MENU </button>
             <a href="index.html#arriba" class="nav-enlaces ocultar">HOME</a>
             <a href="noticias.html#arriba" class="nav-enlaces ocultar">NOTICIAS</a> 
@@ -20,33 +22,42 @@
             <a href="canciones.html#arriba" class="nav-enlaces ocultar">CANCIONES</a>
             <a href="historia.html#arriba" class="nav-enlaces ocultar">HISTORIA</a>
             <a name="arriba"></a>
-         </nav>
-         <div class="container-novedades">
-            <h1>NOVEDADES</h1>
-            <h3 class="h2nov">Si te interesa tener las ultimas novedades suscribite a nuestra pagina.</h3>
-        <!--formulario-->
-         <form class="formulario" action="">
-            <input type="text" name="nombre" placeholder="NOMBRE">
-            <input type="text" name="email" placeholder="E-MAIL">
-            <input type="text" name="pais" placeholder="PAIS">
-            <input type="button" value="ENVIAR" id="button">
-        </form>
-         </div>    
-         <!--footer-->
-        <footer class="footer">
-            <div class="container-footer">
-                <div class="enlaces-footer">
-                    <a href="https://www.instagram.com/coldplay/" target="_blank"  > <img src="imagenes/iconos/instagram.png" alt="instagram" width="20"> </a>  <!-- el target es para que se abra en otra pestaña-->
-                    <a href="https://www.facebook.com/coldplay"  target="_blank" > <img src="imagenes/iconos/facebook.png" alt="facebook" width="20"> </a> 
-                    <a href="https://twitter.com/coldplay/" target="_blank" > <img src="imagenes/iconos/twitter.png" alt="twitter"width="20" > </a> 
-                    <a href="https://www.youtube.com/user/ColdplayVEVO" target="_blank" > <img src="imagenes/iconos/youtube.png" alt="youtube" width="20"> </a> 
-                    <a href="https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU" target="_blank" > <img src="imagenes/iconos/spoty.png" alt="spotify" width="20"></a>
-                </div>
-                <span class="footer-span">copyright &copy</span>  
-            </div>
-        </footer>   
-    </main>
-    
+        </nav>
+		<main class="mainnov">
+            <form action="" method="post" id="form">
+                <div class="form">
+                    <h1>Registro</h1>
+                        <div class="grupo">
+                            <input type="text" name="" id="name"> <span class="barra"></span>
+                            <label for="">Nombre</label>
+                        </div>
 
+                        <div class="grupo">
+                            <input type="email" name="" id="email"> <span class="barra"></span>
+                            <label for="">e-mail</label>
+                        </div>
+
+                        <div class="grupo">
+                            <input type="password" name="" id="password"> <span class="barra"></span>
+                            <label for=""> Contraseña </label>
+                        </div>
+                        <button id="buttonnov" type="submit"> Suscribite </button>
+                        <p class="warnings" id="warnings"></p>
+
+                </div>
+		</main>
+		<footer class="footer">
+        <div class="enlaces-footer">
+            <a href="https://www.instagram.com/coldplay/" target="_blank"  > <img src="img/iconos/instagram.png" alt="instagram" width="20"> </a>  <!-- el target es para que se abra en otra pestaña-->
+            <a href="https://www.facebook.com/coldplay"  target="_blank" > <img src="img/iconos/facebook.png" alt="facebook" width="20"> </a> 
+            <a href="https://twitter.com/coldplay/" target="_blank" > <img src="img/iconos/twitter.png" alt="twitter"width="20" > </a> 
+            <a href="https://www.youtube.com/user/ColdplayVEVO" target="_blank" > <img src="img/iconos/youtube.png" alt="youtube" width="20"> </a> 
+            <a href="https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU" target="_blank" > <img src="img/iconos/spoty.png" alt="spotify" width="20"></a>
+        </div>
+        <span class="footer-span">copyright &copy</span>  
+		</footer>
+	</div>
+    <!-- Js  -->
+<script src="script.js" ></script>
 </body>
 </html>

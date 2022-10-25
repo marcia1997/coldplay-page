@@ -8,7 +8,7 @@ body {
 	color: #000;
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(46,13,165,1) 80%, rgba(46,13,165,1) 100%);
-    background: no-repeat;
+    
 }
 
 .contenedor {
@@ -163,6 +163,7 @@ body {
 			display: block;
 		}
 
+
 .footer 
 {
     display: grid;
@@ -244,6 +245,172 @@ body {
         background-color: #DA70D6;
         border: #e079ba solid 3px;}
 
+/*NOVEDADES*/
+.contenedornov {
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas: "header "
+                        "menu"
+						 "contenido"
+						 "footer";
+}
+
+
+.headernov {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 35px;
+    font-size: 50px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-align:center;
+	background:  #FFE4E1;
+    animation: rainbow-colors 8s linear infinite;
+    animation-delay: calc(-4s * var(--char-percent));
+    color: hsl(
+      calc(240deg * var(--char-percent)
+      ), 
+      90%, 
+      100%
+    );
+	
+	grid-area: header;
+}
+
+
+.mainnov {
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	grid-area: contenido;
+}
+
+.form h1
+{
+    text-align: center;
+    font-weight: 700;
+}
+form
+{
+    background-color: aliceblue;
+    padding: 40px 10px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+
+}
+.form
+{
+    width: 100%;
+    margin: auto;
+}
+.grupo
+{
+    position: relative;
+    margin: 45px;
+    
+}
+input
+{
+    color: #c6c6c6;
+    background: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+input:focus{ 
+    outline: none;
+    color: #5e5d5d;
+}
+
+label
+{
+    color:blueviolet;
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+input:focus~label,
+input:valid~label{
+    top: -14px;
+    font-size: 12px;
+    color: #2196f3;
+}
+
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barra::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(46,13,165,1) 80%, rgba(46,13,165,1) 100%);
+    transition: 0.3s ease width;
+    left: 0;
+}
+
+input:focus~.barra::before{
+    width: 100%;
+}
+#buttonnov
+{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(46,13,165,1) 80%, rgba(46,13,165,1) 100%);
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color:#E9ECF4;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.warnings
+{
+    width:200px;
+    text-align: center;
+    margin: auto;
+    color: #c6c6c6;
+    padding-top: 20px;
+}
+@media screen and (max-width: 370px) 
+{
+    form{width: 80%;}
+}
+
+
+@media screen and (max-width: 768px)
+{
+    .headernov
+    { padding: 20px;
+    font-size: 20px;}
+	.contenedornov {
+		grid-template-areas: "header "
+                            "menu"
+                            "contenido "
+                            "contenido"
+                            "footer ";
+	}
+}     
+
 
  @media screen and (max-width: 370px)
  {
@@ -287,6 +454,7 @@ body {
                                 "sidebar "
                                 "footer ";
 	}
+    
     .menu
     {
             flex-direction: column;
