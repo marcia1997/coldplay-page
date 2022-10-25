@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style2.css">
     <link rel="icon" href="imagenes/iconos/mariposa.ico">
     <title>COLDPLAY</title>
 </head>
-
-
 <body>
-  
-  <header>
-      <a name="arriba"></a> 
-     COLDPLAY
-  </header>
-  <nav class="menu">
-    <a href="index.html#arriba">HOME</a>
-    <a href="noticias.html#arriba">NOTICIAS</a> 
-    <a href="novedades.html#arriba">NOVEDADES</a> 
-    <a href="tour.html#arriba">TOUR</a> 
-    <a href="canciones.html#arriba">CANCIONES</a>
-    <a href="historia.html#arriba">HISTORIA</a>
- </nav>
+	<div class="contenedor">
+		<header class="header">
+			COLDPLAY
+		</header>
+                  <nav class="menu">
+                        <button id="boton-menu-nav" onclick="accion()"> MENU </button>
+                              <a href="index.html#arriba" class="nav-enlaces ocultar">HOME</a>
+                              <a href="noticias.html#arriba" class="nav-enlaces ocultar">NOTICIAS</a> 
+                              <a href="novedades.html#arriba"class="nav-enlaces ocultar">NOVEDADES</a> 
+                              <a href="tour.html#arriba" class="nav-enlaces ocultar">TOUR</a> 
+                              <a href="canciones.html#arriba" class="nav-enlaces ocultar">CANCIONES</a>
+                              <a href="historia.html#arriba" class="nav-enlaces ocultar">HISTORIA</a>
+                  </nav>
+		      <main class="contenido">
+                        <div class="conciertos" style="background-image: url('imagenes/Tour/conc.jpg')" >
+                              <div class="text">
+                                    <h3>Estadio River Plate</h3>
+                                    <p>24 de Octubre 2022</p>
+                              </div>
+                              <a href="https://www.allaccess.com.ar/event/coldplay" class="boton-conciertos-tour" target="_blank">Comprar</a>
+                        </div>
 
 <!--tour-body-->
  <div class="container-tour">
@@ -35,59 +41,78 @@
   <div class="hijo"> ESTADIO RIVER PLATE </div>
   <div class="hijo">    <a target="_blank" class="boton-fechas" href="https://www.allaccess.com.ar/event/coldplay">Comprar</a> </div>
 
-  <div class="hijo"> 27 de Octubre</div>
-  <div class="hijo"> ESTADIO RIVER PLATE </div>
-  <div class="hijo">    <a target="_blank" class="boton-fechas" href="https://www.allaccess.com.ar/event/coldplay">Comprar</a> </div>
+                        <div class="conciertos"style="background-image: url('imagenes/Tour/conc.jpg')">
+                              <div class="text">
+                              <h3>Estadio River Plate</h3>
+                              <p>26 de Octubre 2022</p>
+                              </div>
+                              <a href="https://www.allaccess.com.ar/event/coldplay" class="boton-conciertos-tour" target="_blank">Comprar</a>
+                        </div>
 
-  <div class="hijo"> 27 de Octubre</div>
-  <div class="hijo"> ESTADIO RIVER PLATE </div>
-  <div class="hijo">    <a target="_blank" class="boton-fechas" href="https://www.allaccess.com.ar/event/coldplay">Comprar</a> </div>
+                        <div class="conciertos"style="background-image: url('imagenes/Tour/conc.jpg')">
+                              <div class="text">
+                              <h3>Estadio River Plate</h3>
+                              <p>26 de Octubre 2022</p>
+                              </div>
+                              <a href="https://www.allaccess.com.ar/event/coldplay" class="boton-conciertos-tour" target="_blank">Comprar</a>
+                        </div>
 
-  <div class="hijo"> 27 de Octubre</div>
-  <div class="hijo"> ESTADIO RIVER PLATE </div>
-  <div class="hijo">    <a target="_blank" class="boton-fechas" href="https://www.allaccess.com.ar/event/coldplay">Comprar</a> </div>
-  
+                        <div class="conciertos" style="background-image: url('imagenes/Tour/conc.jpg')" >
+                              <div class="text">
+                                    <h3>Estadio River Plate</h3>
+                                    <p>28 de Octubre 2022</p>
+                              </div>
+                              <a href="https://www.allaccess.com.ar/event/coldplay" class="boton-conciertos-tour" target="_blank">Comprar</a>
+                        </div>
+
+                        <div class="conciertos" style="background-image: url('imagenes/Tour/conc.jpg')" >
+                              <div class="text">
+                                    <h3>Estadio River Plate</h3>
+                                    <p>1 de Noviembre 2022</p>
+                              </div>
+                              <a href="https://www.allaccess.com.ar/event/coldplay" class="boton-conciertos-tour" target="_blank">Comprar</a>
+                        </div>
+
+                        <div class="conciertos"   style="background-image: url('imagenes/Tour/conc.jpg')"  >
+                              <div class="text">
+                                    <h3>Estadio River Plate</h3>
+                                    <p>5 de Noviembre 2022</p>
+                              </div>
+                              <a href="https://www.allaccess.com.ar/event/coldplay" class="boton-conciertos-tour" target="_blank">Comprar</a>
+                        </div>
+            </main>
+            <aside class="aside-tour" style="background-image: url('imagenes/Tour/aside.jpg')">
+                        <!-- titulo de la noticia -->
+                        <h3>Jin de BTS actuara como invitado espacial de Colplay</h3>
+                        <!-- titulo de la noticia -->
+                        <p>El cantante surcoreano será parte de uno de los diez shows que la banda británica ofrecerá en el estadio de River Plate; se trata del show del viernes 28, que se transmitirá en directo a salas de todo el mundo y aquí se verá en los complejos Hoyts, Cinemark y Cinépolis</p>
+                        <!-- Enlace a noticia -->
+                        <a target="_blank" class="boton-aside-tour" href="https://www.lanacion.com.ar/espectaculos/musica/jin-de-bts-actuara-como-invitado-especial-de-coldplay-en-argentina-nid20102022/">Leer más</a>      
+            </aside>
+
+            <footer class="footer">
+                  <div class="enlaces-footer">
+                              <a href="https://www.instagram.com/coldplay/" target="_blank"  > <img src="imagenes/iconos/instagram.png" alt="instagram" width="20"> </a>  <!-- el target es para que se abra en otra pestaña-->
+                              <a href="https://www.facebook.com/coldplay"  target="_blank" > <img src="imagenes/iconos/facebook.png" alt="facebook" width="20"> </a> 
+                              <a href="https://twitter.com/coldplay/" target="_blank" > <img src="imagenes/iconos/twitter.png" alt="twitter"width="20" > </a> 
+                              <a href="https://www.youtube.com/user/ColdplayVEVO" target="_blank" > <img src="imagenes/iconos/youtube.png" alt="youtube" width="20"> </a> 
+                              <a href="https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU" target="_blank" > <img src="imagenes/iconos/spoty.png" alt="spotify" width="20"></a>
+                  </div>
+                  <span class="footer-span">copyright &copy</span>  
+            </footer>
 </div>
+    	<!-- Js  -->
+	<script>
+        function accion ()
+        {
+            console.log('funciona el boton')
+            var ancla = document.getElementsByClassName('nav-enlaces');
+            for (var i = 0 ; i < ancla.length; i++)
+            {
+                ancla[i].classList.toggle('ocultar');
+            }
 
-
-</div>
-
-
-<!--estructura-funcional-->
-<!--<table >
-  <tr>
-    <th>Fecha</th>
-    <th>Lugar</th>
-    <th>Tickets</th>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td><button class="boton-tour">comprar </td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td><button class="boton-tour">comprar </td>
-  </tr>
-</table>
-        
--->
-
-
- 
- <!--footer-->
-<footer>
-  <div class="container-footer">
-  
-    <a href="https://www.instagram.com/coldplay/" target="_blank"  > <img src="imagenes/iconos/instagram.png" alt="instagram" width="20"> </a>  <!-- el target es para que se abra en otra pestaña-->
-    <a href="https://www.facebook.com/coldplay"  target="_blank" > <img src="imagenes/iconos/facebook.png" alt="facebook" width="20"> </a> 
-    <a href="https://twitter.com/coldplay/" target="_blank" > <img src="imagenes/iconos/gorjeo.png" alt="twitter"width="20" > </a> 
-    <a href="https://www.youtube.com/user/ColdplayVEVO" target="_blank" > <img src="imagenes/iconos/youtube.png" alt="youtube" width="20"> </a> 
-    <a href="https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU" target="_blank" > <img src="imagenes/iconos/social.png" alt="spotify" width="20"></a>
-    <p>copyright &copy</p>   
-  </div>
-</footer>
-  
+        }
+    </script>
 </body>
 </html>

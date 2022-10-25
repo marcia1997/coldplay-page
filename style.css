@@ -52,7 +52,8 @@ h1{
 
 /*menu*/
 .menu {
-    display: flex;
+
+    justify-items: center;
     position: relative;
     width: 100%;
     height: 100%;
@@ -77,6 +78,42 @@ h1{
   }
 
 
+  /*menu mejorado*/
+
+.menu2
+{
+    background-color: #dacbe8;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 10px;
+    grid-area: menu;
+}
+.menu2 a:hover { color:   #C71585;  /* rgb(200, 179, 205);*/}
+
+.nav-enlaces
+{
+    font-size: 15px;
+    color: palevioletred;
+    /* color: #FFA2F3; */
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+}
+#boton-menu-nav
+{
+    display: none;
+    box-sizing: border-box;
+    background-color: palevioletred;
+    color: beige;
+    padding: 15px;
+    width: 100%;
+    border:  2px solid  palevioletred ;
+    border-radius: 100px;
+
+}
+
 /*menu */
 
 /*footer*/
@@ -96,6 +133,44 @@ h1{
     justify-content:center;  
   }
 
+  /*footer mejorado*/
+
+  .footer 
+  {
+      display: grid;
+      grid-template-rows: 2fr 1fr;
+      box-sizing: border-box;
+      max-height: 200px;
+      width: 100%;
+      padding: 15px;
+    background:  #dacbe8;
+    color: palevioletred;
+    grid-area: footer;
+  }
+  .footer a
+  {
+      padding: 10px;
+      text-decoration:none; 
+      display: inline-block;
+      box-sizing: border-box; 
+  }
+  
+   .enlaces-footer
+   {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+   .footer-span
+   {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      color: #FFA2F3;
+      font-size: 15px;
+   }
 
   /*footer*/
 
@@ -109,7 +184,7 @@ h1{
     background-size: cover;
     position: relative;
   }
-  .container-historia,.container-noticias,.container-tour,.container-canciones,.container-novedades{
+  .container-historia,.container-noticias,.container-canciones,.container-novedades{
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(46,13,165,1) 80%, rgba(46,13,165,1) 100%);
     height: 1200px;
@@ -175,14 +250,17 @@ h1{
   font-size: 30px;
  }
 
- input{
-  width: 100%;
-  margin-bottom: 30px;
-  padding: 10px;
-  font-size: 17px;
-  border: #9932CC  solid 5px;
-  background-color: #FFB6C1;
- }
+ input 
+  {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: #9932CC  solid 5px;
+    background-color: #FFB6C1;
+  }
+
   
 
  /*canciones*/
@@ -190,12 +268,10 @@ h1{
   display: flex inline;
   position: relative;
  }
-
- .container-canciones h2{
-  text-align: center;
-  font-family: 'Montserrat', Arial, sans-serif;
-  font-weight: 700;
-  font-size:30px;
+ 
+ .container-canciones p{
+  color:#e6adff;
+  padding: 15px;
  }
 
  .neonText{
@@ -327,8 +403,7 @@ padding:30px;
  /* galeria de noticias  */
 
 
-*{box-sizing: border-box;
-}
+*{box-sizing: border-box;}
 
 
 .container-noticias h3{
@@ -498,7 +573,7 @@ padding:30px;
 @media only screen and (min-width: 768px) {
  /*-----componentes generales (min-width: 768px)---*/
   header{
-    width: 100%;
+  width: 100%;
     height: 120px;
     padding: 10px;;
     margin:0;
@@ -541,86 +616,19 @@ padding:30px;
     height: 40%;
   }
 
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  /*-----(min-width: 992px)componentes generales------*/
-  header{ 
-    height:150px;
-    font-size:120px;
-  }
-  h1{
-    font-size:70px;
-    padding-top: 30px;
-  }
-
-
-   h3{
-    font-size:35px;
-  }
-
-
-  /*------(min-width: 992px)noticias-------------*/
+<<<<<<< HEAD
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
   .column {
-    width: 25%;
-  }
-  .container-noticias p{
-    font-size:22px;
-  }
-  .content img{
-    width:100%;
-    height:100%;
-  }
- 
-
-  /*---- (min-width: 992px)historia---------*/
-  .container-historia p{
-    padding: 10px;
-    margin: 0 auto;
-   }
-  
-   /*----(min-width:992px)canciones------*/
-   
-   .container-canciones{
-   display:block;
-   height: 100%;
-   }
-   .video-yt {
-    position:relative;
-    width: 60%;
-    height: 600px;
-    justify-content: center;
-    margin-left: 280px;
-  }
-  .spotify-player{
     width: 100%;
-    height: 450px;
   }
-
-  
 }
 
-
-
-
-
-
-
-
-
-
-
-/*
-@media only screen and (max-width: 300px) {
-  header{  
-    font-size: 20px;
- }
-  
+@media screen and (max-width: 300px) {
   .formulario {
      width: 100%;
   }
+
 
 
 }

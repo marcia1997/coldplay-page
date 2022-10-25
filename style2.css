@@ -1,0 +1,487 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	
+	color: #000;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(46,13,165,1) 80%, rgba(46,13,165,1) 100%);
+    
+}
+
+.contenedor {
+	width: 90%;
+    box-sizing: border-box;
+	max-width: 1200px;
+	margin: 20px auto;
+	display: grid;
+	gap: 20px;
+    padding: 20px;
+    grid-template-columns: 3fr 1fr;
+
+	grid-template-areas: "header header "
+                            "menu  menu"
+						 "contenido  sidebar"
+						 "footer  footer";
+}
+
+/*CONTENEDOR INDEX*/
+.container-imagen-home
+{    
+    background-image: url("https://media.globalcitizen.org/5a/7b/5a7b7b6e-0796-4005-a7dd-c7a7c7fb1ded/coldplay_hero.jpg");
+    background-color:black;
+    height: 800px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+ 
+}
+
+
+
+ .header 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 35px;
+    font-size: 100px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-align:center;
+	background:  #FFE4E1;
+    animation: rainbow-colors 8s linear infinite;
+    animation-delay: calc(-4s * var(--char-percent));
+    color: hsl(
+      calc(240deg * var(--char-percent)
+      ), 
+      90%, 
+      100%
+    );
+	grid-area: header;
+}
+
+    /*animacion*/
+    @keyframes rainbow-colors 
+    {
+        0% { color: rgb(255, 251, 20); }
+        75% { color: rgb(255, 195, 15); }
+        25% { color: hsl(.25turn, 90%, 65%); }
+        50% { color: rgb(43, 235, 14); }
+        75% { color: hsl(.75turn, 90%, 65%); }
+        100% { color: hsl(1turn, 90%, 65%); }
+        100% { color: rgb(243, 59, 59); }
+    }
+
+
+
+.contenedor .contenido 
+{
+    display: grid;
+    gap: 20px;
+	grid-area: contenido;
+}
+.menu
+{
+    background-color: #dacbe8;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 10px;
+    grid-area: menu;
+}
+.menu a:hover { color:   #C71585;  /* rgb(200, 179, 205);*/}
+
+.nav-enlaces
+{
+    font-size: 15px;
+    color: palevioletred;
+    /* color: #FFA2F3; */
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+}
+#boton-menu-nav
+{
+    display: none;
+    box-sizing: border-box;
+    background-color: palevioletred;
+    color: beige;
+    padding: 15px;
+    width: 100%;
+    border:  2px solid  palevioletred ;
+    border-radius: 100px;
+
+}
+
+.contenedor .aside-tour 
+{
+    border-radius: 10px;
+    text-align: center;
+    padding: 25px;
+    box-sizing: border-box;
+    background-size: cover; /**/
+    background-position: center center; /**/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	grid-area: sidebar;
+    border: #000 solid 2px; /**/
+}
+        .aside-tour a 
+		{
+			display: block;
+		}
+		.conciertos
+		{
+			border-radius: 10px;
+			min-height: 200px;
+			padding: 20px;
+			box-sizing: border-box;
+			font-weight: bold;
+			position: relative;
+			overflow: hidden;
+			background-size: cover; /**/
+			background-position: center center;/**/
+			color: #FFA2F3;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		.conciertos a
+		{
+			display: block;
+		}
+		.conciertos .text
+		{
+			display: block;
+		}
+
+
+.footer 
+{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    box-sizing: border-box;
+    max-height: 200px;
+    width: 100%;
+    padding: 15px;
+	background:  #dacbe8;
+	color: palevioletred;
+	grid-area: footer;
+}
+.footer a
+{
+    padding: 10px;
+    text-decoration:none; 
+    display: inline-block;
+    box-sizing: border-box; 
+}
+
+ .enlaces-footer
+ {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+ }
+ .footer-span
+ {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: #FFA2F3;
+    font-size: 15px;
+ }
+ 
+ /*boton conciertos tour*/
+ .boton-conciertos-tour
+ {
+    box-sizing: border-box;
+    display: block;
+    background-color: #e079ba;
+    color: beige;
+    text-decoration: none;
+    border: none;
+	width: 100%;
+	max-width: 120px;
+	color: beige;
+	text-align: center;
+	padding: 5px;
+	border-radius: 100px;
+	cursor: pointer;
+ }
+
+.boton-aside-tour
+{
+    display: block;
+    color: aliceblue;
+    background-color: #DDA0DD;
+	width: 100%;
+	font-weight: bold;
+	font-size: 15px;
+	padding: 10px;
+	border: none;
+	border-radius: 100px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+   
+    
+}
+.boton-conciertos-tour:hover
+        {  background-color:#D87093;
+        border: #e079ba solid 3px;}
+
+.boton-aside-tour:hover
+        { padding: 10px;
+        background-color: #DA70D6;
+        border: #e079ba solid 3px;}
+
+/*NOVEDADES*/
+.contenedornov {
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas: "header "
+                        "menu"
+						 "contenido"
+						 "footer";
+}
+
+
+.headernov {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 35px;
+    font-size: 50px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-align:center;
+	background:  #FFE4E1;
+    animation: rainbow-colors 8s linear infinite;
+    animation-delay: calc(-4s * var(--char-percent));
+    color: hsl(
+      calc(240deg * var(--char-percent)
+      ), 
+      90%, 
+      100%
+    );
+	
+	grid-area: header;
+}
+
+
+.mainnov {
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	grid-area: contenido;
+}
+
+.form h1
+{
+    text-align: center;
+    font-weight: 700;
+}
+form
+{
+    background-color: aliceblue;
+    padding: 40px 10px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+
+}
+.form
+{
+    width: 100%;
+    margin: auto;
+}
+.grupo
+{
+    position: relative;
+    margin: 45px;
+    
+}
+input
+{
+    color: #c6c6c6;
+    background: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+input:focus{ 
+    outline: none;
+    color: #5e5d5d;
+}
+
+label
+{
+    color:blueviolet;
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+input:focus~label,
+input:valid~label{
+    top: -14px;
+    font-size: 12px;
+    color: #2196f3;
+}
+
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barra::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(46,13,165,1) 80%, rgba(46,13,165,1) 100%);
+    transition: 0.3s ease width;
+    left: 0;
+}
+
+input:focus~.barra::before{
+    width: 100%;
+}
+#buttonnov
+{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(46,13,165,1) 80%, rgba(46,13,165,1) 100%);
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color:#E9ECF4;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.warnings
+{
+    width:200px;
+    text-align: center;
+    margin: auto;
+    color: #c6c6c6;
+    padding-top: 20px;
+}
+@media screen and (max-width: 370px) 
+{
+    form{width: 80%;}
+}
+
+
+@media screen and (max-width: 768px)
+{
+    .headernov
+    { padding: 20px;
+    font-size: 20px;}
+	.contenedornov {
+		grid-template-areas: "header "
+                            "menu"
+                            "contenido "
+                            "contenido"
+                            "footer ";
+	}
+}     
+
+
+ @media screen and (max-width: 370px)
+ {
+    .contenedor .header 
+    { padding: 5px;
+      font-size: 20px;}
+
+    .contenido
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        width: auto;
+
+    }
+    .conciertos
+    {
+        padding: 10px;
+        width: 100%;
+       
+    }
+    .contenedor 
+    {
+        width:100%;
+    }
+
+
+ }
+
+
+@media screen and (max-width: 780px){
+	.contenedor 
+    {
+        grid-template-columns:  1fr;
+		grid-template-areas:    "header "
+                                "menu"  
+                                "menu"  
+                                "contenido "
+                                "sidebar "
+                                "sidebar "
+                                "footer ";
+	}
+    
+    .menu
+    {
+            flex-direction: column;
+            text-align: center;
+            justify-items: center;
+            
+
+    }
+    .nav-enlaces
+    {
+        margin: 5px;
+    }
+    #boton-menu-nav{display: inline-block;}
+
+    .ocultar{display: none;}
+
+    .contenedor .header 
+    { padding: 20px;
+    font-size: 50px;}
+
+    
+    .contenedor .aside-tour 
+    {
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr;
+        
+        font-size: 10px;
+        padding: 25px;
+    }
+}
