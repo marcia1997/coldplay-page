@@ -8,7 +8,7 @@ body {
 	color: #000;
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(46,13,165,1) 80%, rgba(46,13,165,1) 100%);
-
+    background: no-repeat;
 }
 
 .contenedor {
@@ -27,9 +27,23 @@ body {
 						 "footer  footer";
 }
 
+/*CONTENEDOR INDEX*/
+.container-imagen-home
+{    
+    background-image: url("https://media.globalcitizen.org/5a/7b/5a7b7b6e-0796-4005-a7dd-c7a7c7fb1ded/coldplay_hero.jpg");
+    background-color:black;
+    height: 800px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+ 
+}
 
 
-.contenedor .header 
+
+ .header 
 {
     display: flex;
     flex-direction: column;
@@ -49,7 +63,6 @@ body {
       90%, 
       100%
     );
-	
 	grid-area: header;
 }
 
@@ -150,8 +163,7 @@ body {
 			display: block;
 		}
 
-
-.contenedor .footer 
+.footer 
 {
     display: grid;
     grid-template-rows: 2fr 1fr;

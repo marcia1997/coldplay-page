@@ -4,46 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <script src="https://kit.fontawesome.com/467aecd343.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style2.css" type="text/css">
     <link rel="icon" href="imagenes/iconos/mariposa.ico">
     <title>COLDPLAY</title>
 </head>
 <body>
-<header>
 
-  <a name="arriba"></a> <!--Esto es un ancla para que abra al principio -->
+    <div class="contenedor-index">
+        <header class="header">
+            COLDPLAY
+        </header>
+        <nav class="menu">
+          <button id="boton-menu-nav" onclick="accion()"> MENU </button>
+          <a href="index.html#arriba" class="nav-enlaces ocultar">HOME</a>
+          <a href="noticias.html#arriba" class="nav-enlaces ocultar">NOTICIAS</a> 
+          <a href="novedades.html#arriba"class="nav-enlaces ocultar">NOVEDADES</a> 
+          <a href="tour.html#arriba" class="nav-enlaces ocultar">TOUR</a> 
+          <a href="canciones.html#arriba" class="nav-enlaces ocultar">CANCIONES</a>
+          <a href="historia.html#arriba" class="nav-enlaces ocultar">HISTORIA</a>
+          <a name="arriba"></a>
+        </nav>
+        <main class="container-imagen-home">
 
-COLDPLAY
-</header>
+        </main>
+        <footer class="footer">
+          <div class="enlaces-footer">
+            <a href="https://www.instagram.com/coldplay/" target="_blank"  > <img src="imagenes/iconos/instagram.png" alt="instagram" width="20"> </a>  <!-- el target es para que se abra en otra pestaña-->
+            <a href="https://www.facebook.com/coldplay"  target="_blank" > <img src="imagenes/iconos/facebook.png" alt="facebook" width="20"> </a> 
+            <a href="https://twitter.com/coldplay/" target="_blank" > <img src="imagenes/iconos/twitter.png" alt="twitter"width="20" > </a> 
+            <a href="https://www.youtube.com/user/ColdplayVEVO" target="_blank" > <img src="imagenes/iconos/youtube.png" alt="youtube" width="20"> </a> 
+            <a href="https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU" target="_blank" > <img src="imagenes/iconos/spoty.png" alt="spotify" width="20"></a>
+            </div>
+            <span class="footer-span">copyright &copy</span>  
+        </footer>
+    </div>
+<!-- Js  -->
+      <script>
+        function accion ()
+        {
+            console.log('funciona el boton')
+            var ancla = document.getElementsByClassName('nav-enlaces');
+            for (var i = 0 ; i < ancla.length; i++)
+            {
+                ancla[i].classList.toggle('ocultar');
+            }
 
+        }
+    </script>
 
-<nav class="menu">
-  <a href="index.html#arriba">HOME</a>
-  <a href="noticias.html#arriba">NOTICIAS</a> 
-  <a href="novedades.html#arriba">NOVEDADES</a> 
-  <a href="tour.html#arriba">TOUR</a> 
-  <a href="canciones.html#arriba">CANCIONES</a>
-  <a href="historia.html#arriba">HISTORIA</a>
-</nav>
-
-
-<div class="container-imagen-home">
-
-</div>
-
-
-<footer class="footer">  
-  <div class="container-footer">
-    
-      <a href="https://www.instagram.com/coldplay/" target="_blank"  > <img src="imagenes/iconos/instagram.png" alt="instagram" width="20"> </a>  <!-- el target es para que se abra en otra pestaña-->
-      <a href="https://www.facebook.com/coldplay"  target="_blank" > <img src="imagenes/iconos/facebook.png" alt="facebook" width="20"> </a> 
-      <a href="https://twitter.com/coldplay/" target="_blank" > <img src="imagenes/iconos/gorjeo.png" alt="twitter"width="20" > </a> 
-      <a href="https://www.youtube.com/user/ColdplayVEVO" target="_blank" > <img src="imagenes/iconos/youtube.png" alt="youtube" width="20"> </a> 
-      <a href="https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU" target="_blank" > <img src="imagenes/iconos/social.png" alt="spotify" width="20"></a>
-      <p>copyright &copy</p>  
-  </div>
-</footer>
 </body>
 </html>
 
