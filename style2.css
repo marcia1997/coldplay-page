@@ -1,4 +1,4 @@
-* {
+* {  
 	margin: 0;
 	padding: 0;
 }
@@ -27,7 +27,7 @@ body {
 						 "footer  footer";
 }
 
-/*CONTENEDOR INDEX*/
+
 .container-imagen-home
 {    
     background-image: url("https://media.globalcitizen.org/5a/7b/5a7b7b6e-0796-4005-a7dd-c7a7c7fb1ded/coldplay_hero.jpg");
@@ -78,7 +78,28 @@ body {
         100% { color: rgb(243, 59, 59); }
     }
 
+    h1{
+        font-size:56px;
+        font-family: 'Times New Roman', Times, serif;
+        color: #f066f7;
+        font-weight:bold;
+        text-decoration: none;
+        margin-top: 0;
+        position: relative;
+        padding:30px;
+        text-align: center;
+      }
 
+      h2{
+        font-size:35px;
+        font-family: 'Times New Roman', Times, serif;
+        color: #f066f7;
+        font-weight:bold;
+        text-decoration: none;
+        margin-top: 0;
+        position: relative;
+        text-align: center;
+      }
 
 .contenedor .contenido 
 {
@@ -265,7 +286,7 @@ body {
     align-items: center;
     justify-items: center;
     padding: 35px;
-    font-size: 50px;
+    font-size: 100px;
     margin: 0px;
     box-sizing: border-box;
     text-align:center;
@@ -286,16 +307,12 @@ body {
 .mainnov {
     height: 650px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 	grid-area: contenido;
 }
 
-.form h1
-{
-    text-align: center;
-    font-weight: 700;
-}
 form
 {
     background-color: aliceblue;
@@ -304,7 +321,7 @@ form
     border-radius: 10px;
 
 }
-.form
+.formulario
 {
     width: 100%;
     margin: auto;
@@ -391,6 +408,7 @@ input:focus~.barra::before{
     color: #c6c6c6;
     padding-top: 20px;
 }
+
 @media screen and (max-width: 370px) 
 {
     form{width: 80%;}
@@ -400,23 +418,14 @@ input:focus~.barra::before{
 @media screen and (max-width: 768px)
 {
     .headernov
-    { padding: 20px;
-    font-size: 20px;}
-	.contenedornov {
-		grid-template-areas: "header "
-                            "menu"
-                            "contenido "
-                            "contenido"
-                            "footer ";
-	}
-}     
-
-
- @media screen and (max-width: 370px)
- {
+    { padding: 5px;
+    font-size: 120px;
+    }
+    
     .contenedor .header 
     { padding: 5px;
-      font-size: 20px;}
+      font-size: 20px;
+    }
 
     .contenido
     {
@@ -436,10 +445,13 @@ input:focus~.barra::before{
     .contenedor 
     {
         width:100%;
+        height: 100%;
     }
+	
+}     
 
 
- }
+ 
 
 
 @media screen and (max-width: 780px){
