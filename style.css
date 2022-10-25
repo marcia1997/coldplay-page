@@ -384,17 +384,7 @@ padding:30px;
   padding-top: 10px;
  }
  
- /*estructura-funcional*/
- /*table{
-  display: inline-block;
-  width: 100%;
-  padding: 204px;
- }
-
- td{
-  padding: 40px;
- }
-*/
+ 
 
 /*tour*/
 
@@ -616,22 +606,7 @@ padding:30px;
     height: 40%;
   }
 
-<<<<<<< HEAD
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 300px) {
-  .formulario {
-     width: 100%;
-  }
 
 
-
-}
- /*
 
 
