@@ -8,10 +8,48 @@ body {
 	color: #000;
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(46,13,165,1) 80%, rgba(46,13,165,1) 100%);
-    
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: relative;
 }
+/*Menu alternativo*/
 
-.contenedor {
+.menu-alternativo
+{
+    background-color: #dacbe8;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 10px;
+    grid-area: menu;
+}
+.menu-alternativo a:hover { color:   #C71585;  /* rgb(200, 179, 205);*/}
+
+.nav-enlaces
+{
+    font-size: 15px;
+    color: palevioletred;
+    /* color: #FFA2F3; */
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+}
+#boton-menu-nav
+{
+    display: none;
+    box-sizing: border-box;
+    background-color: palevioletred;
+    color: beige;
+    padding: 15px;
+    width: 100%;
+    border:  2px solid  palevioletred ;
+    border-radius: 100px;
+
+}
+/*TOUR*/
+.contenedor-tour{
 	width: 90%;
     box-sizing: border-box;
 	max-width: 1200px;
@@ -26,21 +64,6 @@ body {
 						 "contenido  sidebar"
 						 "footer  footer";
 }
-
-
-.container-imagen-home
-{    
-    background-image: url("https://media.globalcitizen.org/5a/7b/5a7b7b6e-0796-4005-a7dd-c7a7c7fb1ded/coldplay_hero.jpg");
-    background-color:black;
-    height: 800px;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
- 
-}
-
 
 
  .header 
@@ -101,47 +124,14 @@ body {
         text-align: center;
       }
 
-.contenedor .contenido 
+.contenido-tour
 {
     display: grid;
     gap: 20px;
 	grid-area: contenido;
 }
-.menu
-{
-    background-color: #dacbe8;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    padding: 10px;
-    grid-area: menu;
-}
-.menu a:hover { color:   #C71585;  /* rgb(200, 179, 205);*/}
-
-.nav-enlaces
-{
-    font-size: 15px;
-    color: palevioletred;
-    /* color: #FFA2F3; */
-    display: inline-block;
-    padding: 10px;
-    text-decoration: none;
-}
-#boton-menu-nav
-{
-    display: none;
-    box-sizing: border-box;
-    background-color: palevioletred;
-    color: beige;
-    padding: 15px;
-    width: 100%;
-    border:  2px solid  palevioletred ;
-    border-radius: 100px;
-
-}
-
-.contenedor .aside-tour 
+/*ASIDE*/
+.aside-tour 
 {
     border-radius: 10px;
     text-align: center;
@@ -159,6 +149,30 @@ body {
 		{
 			display: block;
 		}
+/*BOTON ASIDE*/
+    .boton-aside-tour
+    {
+        display: block;
+        color: aliceblue;
+        background-color: #DDA0DD;
+        width: 100%;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 10px;
+        border: none;
+        border-radius: 100px;
+        text-decoration: none;
+        cursor: pointer;
+        text-align: center;     
+    }
+    .boton-aside-tour:hover
+    { padding: 10px;
+    background-color: #DA70D6;
+    border: #e079ba solid 3px;}
+
+/*ASIDE*/
+
+/*CONCIERTOS*/
 		.conciertos
 		{
 			border-radius: 10px;
@@ -184,8 +198,31 @@ body {
 			display: block;
 		}
 
+/*boton conciertos tour*/
+ .boton-conciertos-tour
+ {
+    box-sizing: border-box;
+    display: block;
+    background-color: #e079ba;
+    color: beige;
+    text-decoration: none;
+    border: none;
+	width: 100%;
+	max-width: 120px;
+	color: beige;
+	text-align: center;
+	padding: 5px;
+	border-radius: 100px;
+	cursor: pointer;
+ }
+ .boton-conciertos-tour:hover
+        {  background-color:#D87093;
+        border: #e079ba solid 3px;}
 
-.footer 
+/*CONCIERTOS*/
+
+/*FOOTER*/
+.footer-alternativo 
 {
     display: grid;
     grid-template-rows: 2fr 1fr;
@@ -197,7 +234,7 @@ body {
 	color: palevioletred;
 	grid-area: footer;
 }
-.footer a
+.footer-alternativo a
 {
     padding: 10px;
     text-decoration:none; 
@@ -221,54 +258,13 @@ body {
     color: #FFA2F3;
     font-size: 15px;
  }
+
+/*FOOTER*/
  
- /*boton conciertos tour*/
- .boton-conciertos-tour
- {
-    box-sizing: border-box;
-    display: block;
-    background-color: #e079ba;
-    color: beige;
-    text-decoration: none;
-    border: none;
-	width: 100%;
-	max-width: 120px;
-	color: beige;
-	text-align: center;
-	padding: 5px;
-	border-radius: 100px;
-	cursor: pointer;
- }
-
-.boton-aside-tour
+/*------NOVEDADES-------*/
+.contenedor-nov 
 {
-    display: block;
-    color: aliceblue;
-    background-color: #DDA0DD;
-	width: 100%;
-	font-weight: bold;
-	font-size: 15px;
-	padding: 10px;
-	border: none;
-	border-radius: 100px;
-    text-decoration: none;
-    cursor: pointer;
-    text-align: center;
-   
-    
-}
-.boton-conciertos-tour:hover
-        {  background-color:#D87093;
-        border: #e079ba solid 3px;}
-
-.boton-aside-tour:hover
-        { padding: 10px;
-        background-color: #DA70D6;
-        border: #e079ba solid 3px;}
-
-/*NOVEDADES*/
-.contenedornov {
-	width: 90%;
+	
 	max-width: 1000px;
 	margin: 20px auto;
 	display: grid;
@@ -279,8 +275,7 @@ body {
 						 "footer";
 }
 
-
-.headernov {
+.header-nov {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -304,19 +299,20 @@ body {
 }
 
 
-.mainnov {
-    height: 650px;
+.main-nov {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 	grid-area: contenido;
+    
 }
-
+/*formulario*/
 form
 {
     background-color: aliceblue;
-    padding: 40px 10px;
+    padding:10px;
     box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
     border-radius: 10px;
 
@@ -387,7 +383,9 @@ input:valid~label{
 input:focus~.barra::before{
     width: 100%;
 }
-#buttonnov
+/*formulario*/
+
+#button-nov
 {
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(46,13,165,1) 80%, rgba(46,13,165,1) 100%);
@@ -412,6 +410,17 @@ input:focus~.barra::before{
 @media screen and (max-width: 370px) 
 {
     form{width: 80%;}
+
+    .contenedor-nov
+    {
+        width: 100%;
+        margin:0px;
+    }
+    .headernov
+    { padding: 5px;
+        margin: 0px;
+    font-size: 50px;
+    }
 }
 
 
@@ -422,12 +431,12 @@ input:focus~.barra::before{
     font-size: 120px;
     }
     
-    .contenedor .header 
+    .header 
     { padding: 5px;
       font-size: 20px;
     }
 
-    .contenido
+    .contenido-tour
     {
         display: flex;
         flex-direction: column;
@@ -442,7 +451,7 @@ input:focus~.barra::before{
         width: 100%;
        
     }
-    .contenedor 
+    .contenedor-tour 
     {
         width:100%;
         height: 100%;
@@ -451,11 +460,18 @@ input:focus~.barra::before{
 }     
 
 
- 
-
-
-@media screen and (max-width: 780px){
-	.contenedor 
+@media screen and (max-width: 600px)
+{
+    .headernov
+    { padding: 5px;
+        margin: 0px;
+    font-size: 50px;
+    }
+    .contenedor-nov
+    {
+        width: 80%;
+    }
+	.contenedor-tour
     {
         grid-template-columns:  1fr;
 		grid-template-areas:    "header "
@@ -467,13 +483,11 @@ input:focus~.barra::before{
                                 "footer ";
 	}
     
-    .menu
+    .menu-alternativo
     {
             flex-direction: column;
             text-align: center;
             justify-items: center;
-            
-
     }
     .nav-enlaces
     {
@@ -483,12 +497,12 @@ input:focus~.barra::before{
 
     .ocultar{display: none;}
 
-    .contenedor .header 
+    .header 
     { padding: 20px;
     font-size: 50px;}
 
     
-    .contenedor .aside-tour 
+   .aside-tour 
     {
         display: grid;
         grid-template-rows: 1fr 2fr 1fr;
