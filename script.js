@@ -1,4 +1,4 @@
-
+//rest api youtube
 var tag = document.createElement('script');
             tag.src = "https://www.youtube.com/iframe_api";
             var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -47,7 +47,7 @@ var tag = document.createElement('script');
             }
         
         
-
+//validacion novedades formulario
 const nombre = document.getElementById("name")
 const email = document.getElementById("email")
 const pass = document.getElementById("password")
