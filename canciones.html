@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="./script.js"></script>
     <link rel="icon" href="imagenes/iconos/mariposa.ico"> 
     <title>COLDPLAY</title>
 </head>
@@ -24,20 +25,19 @@
      
     <div class="container-canciones">
        <h1>CANCIONES</h1> 
-        <p>Podes disfrutar y conocer nuestras canciones más emblematicas</p>
+          <h2 class="neonText">
+            NUESTROS CLASICOS
+          </h2>
         <iframe class="spotify-player" style="border-radius:12px" src="https://open.spotify.com/embed/artist/4gzpq5DPGxSnKTe4SA8HAU?utm_source=generator" width="400" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> 
-         <!--<div class="video">
-        <h3>Nueva Cancion</h3>
-      X<video playsinline="" class="disco" autoplay="" loop="" muted="" preload="auto" aria-hidden="true">
-            <source src="https://www.coldplay.com/wp/wp-content/uploads/2021/07/MOT.mp4" type="video/mp4">
-        </video>
-        </div>-->
         <div class="video-yt embed-responsive embed-responsive-16by9">
-       <div id="player3" class="player"></div>   
+            <h2 class="neonText">
+                NUEVA CANCION
+            </h2>
+       <div id="video-cancion" class="player">
+       </div>   
     </div>
     </div>
 
-     
 
 
   
@@ -52,54 +52,6 @@
             <p>copyright &copy</p>      
         </div>
     </footer>
-    <script>
-        var tag = document.createElement('script');
-            tag.src = "https://www.youtube.com/iframe_api";
-            var firstScriptTag = document.getElementsByTagName('script')[0];
-            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-        
-            var playerInfoList = [
-                {id: 'player3', height: '30%', width: '100%', videoId: 'KbVKJx9gNAs'}
-            ];
-            //Init players
-            function onYouTubeIframeAPIReady() {
-                if (typeof playerInfoList === 'undefined') return;
-        
-                for (var i = 0; i < playerInfoList.length; i++) {
-                    var curplayer = createPlayer(playerInfoList[i]);
-                    players[i] = curplayer;
-                }
-            }
-        
-            var players = new Array();
-        
-            function createPlayer(playerInfo) {
-                return new YT.Player(playerInfo.id, {
-                    height: playerInfo.height,
-                    width: playerInfo.width,
-                    videoId: playerInfo.videoId,
-                    events: {'onStateChange': onPlayerStateChange}
-                });
-            }
-        
-            function onPlayerStateChange(event) {
-                if (event.data == YT.PlayerState.PLAYING) {
-                    manageVideo(event.target.a.id);
-                }
-            }
-        
-            function manageVideo(player_id) {
-                $(players).each(function (i) {
-                    if(this.a.id == player_id){
-                        this.playVideo();
-                    }else {
-                        this.pauseVideo();
-                    }
-                });
-            }
-        
-        
-            
-            </script>
+   
             
 </body>
