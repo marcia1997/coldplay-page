@@ -9,22 +9,21 @@
     <title>COLDPLAY</title>
 </head>
 <body>
-	
-		<header class="headernov">
-			COLDPLAY
-		</header>
-        <nav class="menu">
-            <button id="boton-menu-nav" onclick="accion()"> MENU </button>
-            <a href="index.html#arriba" class="nav-enlaces ocultar">HOME</a>
-            <a href="noticias.html#arriba" class="nav-enlaces ocultar">NOTICIAS</a> 
-            <a href="novedades.html#arriba"class="nav-enlaces ocultar">NOVEDADES</a> 
-            <a href="tour.html#arriba" class="nav-enlaces ocultar">TOUR</a> 
-            <a href="canciones.html#arriba" class="nav-enlaces ocultar">CANCIONES</a>
-            <a href="historia.html#arriba" class="nav-enlaces ocultar">HISTORIA</a>
-            <a name="arriba"></a>
-        </nav>
-        <div class="contenedornov">
-		<main class="mainnov">
+    <header class="header-nov">
+        COLDPLAY
+    </header>
+    <nav class="menu-alternativo">
+        <button id="boton-menu-nav" onclick="accion()"> MENU </button>
+        <a href="index.html#arriba" class="nav-enlaces ocultar">HOME</a>
+        <a href="noticias.html#arriba" class="nav-enlaces ocultar">NOTICIAS</a> 
+        <a href="novedades.html#arriba"class="nav-enlaces ocultar">NOVEDADES</a> 
+        <a href="tour.html#arriba" class="nav-enlaces ocultar">TOUR</a> 
+        <a href="canciones.html#arriba" class="nav-enlaces ocultar">CANCIONES</a>
+        <a href="historia.html#arriba" class="nav-enlaces ocultar">HISTORIA</a>
+        <a name="arriba"></a>
+    </nav>
+    <div class="contenedor-nov">
+		<main class="main-nov">
             <h1>NOVEDADES</h1>
             <form action="" method="post" id="form">
                 <div class="formulario">
@@ -43,12 +42,14 @@
                             <input type="password" name="" id="password"> <span class="barra"></span>
                             <label for=""> Contraseña </label>
                         </div>
-                        <button id="buttonnov" type="submit"> Suscribite </button>
+                        <button id="button-nov" type="submit"> Suscribite </button>
                         <p class="warnings" id="warnings"></p>
 
                 </div>
 		</main>
-		<footer class="footer">
+
+	</div>
+    <footer class="footer-alternativo">
         <div class="enlaces-footer">
             <a href="https://www.instagram.com/coldplay/" target="_blank"  > <img src="imagenes/iconos/instagram.png" alt="instagram" width="20"> </a>  <!-- el target es para que se abra en otra pestaña-->
             <a href="https://www.facebook.com/coldplay"  target="_blank" > <img src="imagenes/iconos/facebook.png" alt="facebook" width="20"> </a> 
@@ -57,8 +58,7 @@
             <a href="https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU" target="_blank" > <img src="imagenes/iconos/spoty.png" alt="spotify" width="20"></a>
         </div>
         <span class="footer-span">copyright &copy</span>  
-		</footer>
-	</div>
+	</footer>
     <!-- Js  -->
 <script src="script.js" ></script>
 </body>
