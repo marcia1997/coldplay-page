@@ -3,15 +3,17 @@
 body{
     margin:0;
     padding:0;
+  
 }
 
 header{
     background-color:  #FFE4E1;   /* #f4f4f4;*/
     width: 100%;
     height: 170px;
-    padding: 10px;;
+    padding: 10px;
     margin:0;
     text-align:center;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 100px;
     animation: rainbow-colors 8s linear infinite;
     animation-delay: calc(-4s * var(--char-percent));
@@ -38,7 +40,8 @@ header{
 
 h1{
   font-size:56px;
-  color: #dacbe8;
+  font-family: 'Times New Roman', Times, serif;
+  color: #f066f7;
   font-weight:bold;
   text-decoration: none;
   margin-top: 0;
@@ -66,7 +69,7 @@ h1{
     padding: 15px 15px;
     text-align: center;
     color:#e079ba;
-    font-family: sans-serif bold;
+    font-family: 'Times New Roman',serif;
 
   }
   .menu a:hover {
@@ -79,29 +82,28 @@ h1{
 /*footer*/
 
   .container-footer{
-    display: inline;
+    display: flex ;
     position:absolute;
     height: 100px;
     width: 100%;
     background: #FFE4E1;   /*#ecbce1; */      /* #dacbe8;*/
     margin: 0;
-    align-items: center;
-    padding:25px 10px 50px 90px;
-    position:inline;
+    padding:25px;
   }
   .container-footer a{
     padding: 20px;
     text-decoration:none;
-    
+    justify-content:center;  
   }
+
+
   /*footer*/
 
   /*backgrounds*/
   .container-imagen-home { 
     background-image: url("https://media.globalcitizen.org/5a/7b/5a7b7b6e-0796-4005-a7dd-c7a7c7fb1ded/coldplay_hero.jpg");
     background-color:black;
-    height: 800px;
-    width: 100%;
+    height: 900px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -132,12 +134,10 @@ h1{
 
  /*historia*/
   
- 
   .container-historia{
    display: flex;
-   position:  block;
+   position: block;
   }
- 
   .img-historia{
   width: 100%;
   height:70%;
@@ -145,12 +145,13 @@ h1{
   }
  
   .sec-historia-texto{
-    float:none;
-   
+    float:center;
+    
   }
  .sec-historia-texto p{
   color:#dacbe8;
-  padding:5px;
+  font-family:'Times New Roman',sans-serif;
+  padding:15px;
  }
 
  /*historia*/
@@ -158,12 +159,13 @@ h1{
  /*novedades*/
  .formulario
  {
+  /*corregir width=correcto width=80%*/
   width: 600px;
   margin: auto;
   background-color: rgba(0,0,0,0.4);
-  padding: 30px;
+  padding: 12px;
   box-sizing: border-box;
-  margin-top: 20px;
+  margin-top: 10px;
  }
  .h2nov
  {
@@ -177,29 +179,75 @@ h1{
   width: 100%;
   margin-bottom: 30px;
   padding: 10px;
-  box-sizing: border-box;
   font-size: 17px;
   border: #9932CC  solid 5px;
   background-color: #FFB6C1;
-
+ }
   
 
  /*canciones*/
  .container-canciones{
   display: flex inline;
+  position: relative;
+ }
+
+ .container-canciones h2{
+  text-align: center;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 700;
+  font-size:30px;
+ }
+
+ .neonText{
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #f09,
+    0 0 82px #f09,
+    0 0 92px #f09,
+    0 0 102px #f09,
+    0 0 151px #f09;
+    animation: pulsate 0.11s ease-in-out infinite alternate;    
  }
  
- .container-canciones p{
-  color:#FFE4E1;
-  padding: 10px;;
- }
- .video-yt iframe{
-  position: absolute ;
-  margin:-450px 0px 0px 590px;
-  width: 500px;
-  height: 400px;
+@keyframes pulsate {
+    
+  100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #f09,
+      0 0 80px #f09,
+      0 0 90px #f09,
+      0 0 100px #f09,
+      0 0 150px #f09;
   
+  }
+  
+  0% {
+
+    text-shadow:
+    0 0 4px #fff,
+    0 0 10px #fff,
+    0 0 18px #fff,
+    0 0 38px #f09,
+    0 0 73px #f09,
+    0 0 80px #f09,
+    0 0 94px #f09,
+    0 0 140px #f09;
+
 }
+}
+ 
+ .container-canciones p{
+  color:#e6adff;
+  padding: 15px;
+ }
+
 .video-yt{
 padding:30px;
 }
@@ -208,12 +256,6 @@ padding:30px;
   padding:8px;
 }
 
-/*.canciones-video{
-  position:relative; 
-  width:20%;
-  height:20%;
-  margin:-750px 50px 450px 980px;
-}/*
 
  /*tour*/
  .boton-fechas
@@ -266,10 +308,21 @@ padding:30px;
   padding-top: 10px;
  }
  
+ /*estructura-funcional*/
+ /*table{
+  display: inline-block;
+  width: 100%;
+  padding: 204px;
+ }
 
+ td{
+  padding: 40px;
+ }
+*/
 
+/*tour*/
 
- /*noticias*/
+ /*-------noticias----------------------*/
 
  /* galeria de noticias  */
 
@@ -277,16 +330,19 @@ padding:30px;
 *{box-sizing: border-box;
 }
 
-.container-noticias{
-  height:100%;
-}
+
 .container-noticias h3{
-  font-size:25px;
+  font-family:'Merriweather',serif;
+  font-size:25px 1000;
+  color:#dacbe8;
 }
+
 .container-noticias p{
+  font-family:'Josefin Sans',serif;
   font-size:15px;
+  color: #dacbe8;
 }
- .main {
+ .container-noticias {
   height: 100%;
   margin: auto;
 }
@@ -297,13 +353,13 @@ padding:30px;
 
 .row,
 .row > .column {
-  padding: 6px;
+  padding: 8px;
 }
 
 
 .column {
   float: left;
-  width: 25%;
+  text-align: center;
 
 }
 
@@ -316,115 +372,258 @@ padding:30px;
   display: table;
   clear: both;
 }
-
-
-.content {
- padding: 5px;
-
+.column img{
+  width: 100%;
+}
+.content{
+  padding: 10px;
 }
 
+.content:hover h3{
+  color:#ff5dc4;
+  overflow: hidden;
+}
 
  /* galeria de noticias  */
 
-/*Responsive*/
+/*-----Responsive---------*/
+/*Break points fueron tomados en base a w3schools*/
 
+
+/* Extra small devices (phones, 600px and down) */
  @media only screen and (max-width: 600px) {
-  header{  height:80px;
-           font-size: 45px;
-
-        }
-
-  h1{
-    font-size:50px;
-  }
-
-  h2{
-    font-size:35px;
-  }
-
-  p{
-    font-size:12px;
-  }
-  .menu{display:block;
-     height:150px;
-     padding-top:-5px;
-        }
-  
- .menu a{
-    padding: 3px;
-  }
-  .menu a:hover{
-    background-color:#C71585;
-    color:#FFE4E1;   
-  }
-  .container-imagen-home{
-    width:100%;
-  }
-.sec-historia-imagen{
-  margin-top:0;
-}
-.img-historia{
-  width:100%;
-  height:70%;
-
-}
-  .historia{
-    display:block;
-    height:800px; 
-   }
  
-   iframe {
+ 
+  /*-----(max-width: 600px) componentes generales-----*/
+  header{ 
+    height:100px;
+    font-size:60px;
+  }
+ 
+ h1{
+ font-size:45px;
+ padding-top: 15px;
+ }
+
+ h3{
+   font-size:25px;
+ }
+
+ .menu{
+  display:block;
+  height:150px;
+  padding-top:-5px;
+   }
+  
+  .menu a{
+  padding: 3px;
+  }
+
+  .menu a:hover{
+  background-color:#ff4abd;
+  color:#FFE4E1;   
+  }
+
+  .container-footer{
+    padding: 8px;
+   }
+
+   .container-footer{
+    padding:20px;
+  }
+  .container-footer a{
+    padding: 10px;
+    
+  }
+
+  /*componentes generales*/
+
+ 
+
+/*------------(max-width: 600px) responsive--------historia*/
+.container-historia{
+  height:100%;
+}
+ .sec-historia-imagen{
+  margin-top:0;
+ }
+
+
+.container-historia h1{
+  position:absolute;
+  padding-top: 100px;
+  padding-left: 100px;
+}
+.container-historia p{
+  font-size:17;
+
+}
+ 
+/*-------(max-width: 600px) responsive canciones--------------------*/
+  .container-canciones{
+    height: 1200px;
+  }
+  .spotify-player  {
     width:100%;
-    height:50%;
+    height: 500px;
    }
    
-   
-   .column {
-    width: 100%;
-  }
+
   .video-yt iframe{
     position:relative ;
     margin:0;
     width:100%;
-    height:100%;
+    height: 250px;
 
-    
   }
   
+
+  /*--------(max-width: 600px) responsive pagina noticias-----*/
+
+
+.container-noticias p{
+  font-size:18px;
 }
 
+ .column {
+    width:100%;
+  }
+ .content img{
+    width:70%;
+    height:80%;
+  }
+}
 
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
- 
+/*----------------Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+ /*-----componentes generales (min-width: 768px)---*/
   header{
-  width: 100%;
+    width: 100%;
     height: 120px;
     padding: 10px;;
     margin:0;
     text-align:center;
-    font-size: 70px;
+    font-size: 80px;
   }
+   h1{
+    font-size:60px;
+    padding-top: 25px;
+    }
+
+    h3{
+      font-size:30px;
+    }
+
+
+  /*-------- (min-width: 768px) noticias-------------*/
   .column {
     width: 50%;
   }
-}
-
-<<<<<<< HEAD
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
+ 
+  .container-noticias p{
+    font-size:20px;
   }
+  .content img{
+    width:100%;
+    height:100%;
+  }
+ 
+  /*-------- (min-width: 768px) canciones-------------*/
+  .container-canciones{
+    height: 1200px;
+  }
+  .video-yt iframe{
+    width: 100%;
+    height: 400px; 
+  }
+  .spotify-player{
+    width: 100%;
+    height: 40%;
+  }
+
+
 }
 
-@media screen and (max-width: 300px) {
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /*-----(min-width: 992px)componentes generales------*/
+  header{ 
+    height:150px;
+    font-size:120px;
+  }
+  h1{
+    font-size:70px;
+    padding-top: 30px;
+  }
+
+
+   h3{
+    font-size:35px;
+  }
+
+
+  /*------(min-width: 992px)noticias-------------*/
+  .column {
+    width: 25%;
+  }
+  .container-noticias p{
+    font-size:22px;
+  }
+  .content img{
+    width:100%;
+    height:100%;
+  }
+ 
+
+  /*---- (min-width: 992px)historia---------*/
+  .container-historia p{
+    padding: 10px;
+    margin: 0 auto;
+   }
+  
+   /*----(min-width:992px)canciones------*/
+   
+   .container-canciones{
+   display:block;
+   height: 100%;
+   }
+   .video-yt {
+    position:relative;
+    width: 60%;
+    height: 600px;
+    justify-content: center;
+    margin-left: 280px;
+  }
+  .spotify-player{
+    width: 100%;
+    height: 450px;
+  }
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+@media only screen and (max-width: 300px) {
+  header{  
+    font-size: 20px;
+ }
+  
   .formulario {
      width: 100%;
   }
 
-  
- 
+
+}
+ /*
 
 
